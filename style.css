@@ -1,0 +1,154 @@
+@font-face {
+  font-family: LiberationSans;
+  src: url(LiberationSans-Regular.ttf);
+}
+@font-face {
+  font-family: LiberationSansBold;
+  src: url(LiberationSans-Bold.ttf);
+}
+
+* {
+  font-family: LiberationSans;
+}
+
+/* ----------------------------------------------------------------------------
+Top section */
+
+#products {
+    width: 30px;
+    height: 30px;
+  /*  background: url(spritesheet.png) 0 0; */
+    background-size: 528px 68px;
+}
+
+#signin {
+  background-color: rgb(112, 155, 221);
+  color: white;
+  padding: 10px;
+  border-radius: 0px;
+  border: 1px solid rgb(112, 155, 221);
+  font-family: LiberationSansBold;
+}
+
+#signin:hover {
+  border: 1px solid black;
+}
+
+
+
+#navbartop {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+.navbartoplinks {
+  float: left;
+}
+
+.navbartoplinks a {
+  display: block;
+  color: #222;
+  font-size: 13px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbartoplinks a:hover {
+  text-decoration: underline;
+}
+
+
+/* ----------------------------------------------------------------------------
+Main section */
+
+#main {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+}
+
+#main img {
+    width: 272;
+    height: 92;
+    padding-top: 109px;
+}
+
+input[type=text] {
+  /*Might want to apply these to a div instead? Need space before text starts*/
+  background: #fff;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+}
+
+input[type=text]:hover {
+ box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+ border-color: rgba(223,225,229,0);
+}
+
+button {
+  background-color: #f2f2f2;
+ /* border: 1px solid #f2f2f2;
+   I think this prevents the spacing from changing*/
+ border: 0px;
+  border-radius: 4px;
+  color: #5F6368; 
+}
+
+button:hover {
+  color: black;
+  border: 1px solid #dfe1e5;
+}
+
+
+/* ----------------------------------------------------------------------------
+Bottom section */
+
+
+#countrybox {
+padding-left: 10px;
+left: 0;
+  overflow: hidden;
+  position: fixed;
+  bottom: 45;
+  left: 0;
+  width: 100%;
+  color: rgba(0,0,0,.54);
+  background-color: #f2f2f2;
+  border: 1px solid #e4e4e4;
+}
+
+#navbarbot {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: rgba(0,0,0,.54);
+  background-color: #f2f2f2;
+  border: 1px solid #e4e4e4;
+}
+
+.navbarbotlinks {
+  float: left;
+}
+
+.navbarbotlinks a {
+  display: block;
+  color: #222;
+  font-size: 13px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbarbotlinks a:hover {
+  text-decoration: underline;
+}
