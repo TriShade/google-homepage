@@ -1,3 +1,6 @@
+/* ----------------------------------------------------------------------------
+General */
+
 @font-face {
   font-family: LiberationSans;
   src: url(LiberationSans-Regular.ttf);
@@ -11,14 +14,26 @@
   font-family: LiberationSans;
 }
 
+/* Sprite stuff
+input[type=text], #products {
+  background-image: url(spritesheet.png);
+  background-repeat: no-repeat;
+}*/
+
+
 /* ----------------------------------------------------------------------------
 Top section */
 
 #products {
     width: 30px;
     height: 30px;
-  /*  background: url(spritesheet.png) 0 0; */
-    background-size: 528px 68px;
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+  /*  background-size: 528px 68px;
+background-position: 20% 50%; */
+background-position: -132px -38px;
+background-size: 528px 68px;
+    /* 16x16 (140, 46)*/
 }
 
 #signin {
@@ -29,6 +44,7 @@ Top section */
   border: 1px solid rgb(112, 155, 221);
   font-family: LiberationSansBold;
 }
+
 
 #signin:hover {
   border: 1px solid black;
@@ -78,16 +94,50 @@ Main section */
     padding-top: 109px;
 }
 
-input[type=text] {
-  /*Might want to apply these to a div instead? Need space before text starts*/
+/* Search bar */
+
+.search {
   background: #fff;
   border: 1px solid #dfe1e5;
   border-radius: 24px;
+  width: 584px;
+  height: 46px;
+margin-left: auto;
+margin-right: auto;
 }
 
-input[type=text]:hover {
- box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
- border-color: rgba(223,225,229,0);
+.search:hover {
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+  border-color: rgba(223,225,229,0);
+ }
+
+input[type=text] {
+  /*Might want to apply these to a div instead? Need space before text starts*/
+  font-size: 16px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 24px;
+  width: 90%;
+  height: 100%;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: 0px;
+
+ /* background: url('spritesheet.png') no-repeat scroll;
+  background-position: -252px -38px;
+  background-size: 528px 68px;
+  padding: 12px 20px 12px 40px;  
+*/
+  /* (252, 38) 15x15 */
+}
+
+#searchicon {
+  width: 20px;
+  height: 20px;
+  background: url('spritesheet.png') no-repeat scroll;
+  background-position: -252px -38px;
+  background-size: 528px 68px;
+  /*padding: 12px 20px 12px 40px;  */
+  padding: 0px 0px 0px 20px;  
 }
 
 button {
