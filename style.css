@@ -33,21 +33,29 @@ Top section */
 background-position: 20% 50%; */
 background-position: -132px -38px;
 background-size: 528px 68px;
+margin-top: 7px;
+padding: 0px;
     /* 16x16 (140, 46)*/
 }
 
 #signin {
-  background-color: rgb(112, 155, 221);
+  background-color: #4484f3;
   color: white;
-  padding: 10px;
   border-radius: 0px;
   border: 1px solid rgb(112, 155, 221);
   font-family: LiberationSansBold;
+  height: 30px;
+  width: 69px;
+  text-align: left;
+  font-size: 13px;
+  border-radius: 2px;
+  padding-left: 12px;
+  margin-top: 7px;
 }
 
 
 #signin:hover {
-  border: 1px solid black;
+  box-shadow: 0 1px 1px 0 rgba(32,33,36,0.28);
 }
 
 
@@ -62,11 +70,12 @@ background-size: 528px 68px;
 
 .navbartoplinks {
   float: left;
+  margin-left: 5px;
 }
 
 .navbartoplinks a {
   display: block;
-  color: #222;
+  color: rgb(0, 0, 0);
   font-size: 13px;
   text-align: center;
   padding: 14px 16px;
@@ -92,6 +101,7 @@ Main section */
     width: 272;
     height: 92;
     padding-top: 109px;
+    margin-bottom: 20px;
 }
 
 /* Search bar */
@@ -104,9 +114,10 @@ Main section */
   height: 46px;
 margin-left: auto;
 margin-right: auto;
+margin-top: 5px;
 }
 
-.search:hover {
+.search:hover, .search:focus {
   box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
   border-color: rgba(223,225,229,0);
  }
@@ -121,32 +132,38 @@ input[type=text] {
   box-sizing: border-box;
   margin-left: auto;
   margin-right: 0px;
-
- /* background: url('spritesheet.png') no-repeat scroll;
-  background-position: -252px -38px;
-  background-size: 528px 68px;
-  padding: 12px 20px 12px 40px;  
-*/
   /* (252, 38) 15x15 */
 }
 
 #searchicon {
-  width: 20px;
   height: 20px;
   background: url('spritesheet.png') no-repeat scroll;
   background-position: -252px -38px;
   background-size: 528px 68px;
   /*padding: 12px 20px 12px 40px;  */
+  margin-top: 3px;
   padding: 0px 0px 0px 20px;  
 }
 
 button {
   background-color: #f2f2f2;
- /* border: 1px solid #f2f2f2;
-   I think this prevents the spacing from changing*/
- border: 0px;
+ border: 1px solid #f2f2f2;
+margin: 11px 4px 4px 11px;
+padding-right: 16px;
+padding-left: 16px;
   border-radius: 4px;
   color: #5F6368; 
+  height: 34px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+/* 127 142 */
+ #b1 {
+   width: 127px;
+ }
+
+#b2 {
+  width: 142px;
 }
 
 button:hover {
@@ -164,12 +181,20 @@ padding-left: 10px;
 left: 0;
   overflow: hidden;
   position: fixed;
-  bottom: 45;
+  bottom: 45px;
+  height: 40px;
   left: 0;
   width: 100%;
   color: rgba(0,0,0,.54);
   background-color: #f2f2f2;
   border: 1px solid #e4e4e4;
+}
+
+#countrybox p {
+  font-size: 15px;
+  margin-left: 17px;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 #navbarbot {
@@ -190,10 +215,14 @@ left: 0;
   float: left;
 }
 
+#ad {
+  margin-left: 10px;
+}
+
 .navbarbotlinks a {
   display: block;
-  color: #222;
-  font-size: 13px;
+  color: #5f6368;
+  font-size: 14px;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
